@@ -1,0 +1,162 @@
+/* Stlying navbar is the crucial step because header will behave as a partial in the project to variable part will change according to the routes but navbar will remain unchanges */
+:root{
+	--orange:#ff7800;
+	--black:#130f40;
+	--light-color:#666;
+	--box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+	--border: .2rem solid rgba(0, 0, 0, .1);
+	--outline: .1rem solid rgba(0, 0, 0, .1);
+	--outline-hover: .2rem solid rgba(--black);	
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+	margin: 0;padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+	text-decoration: none;
+	transition: all .2s linear;
+}
+  .navBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--black);
+    box-shadow: var(--box-shadow);
+    height: 80px;
+    align-items: center;
+}
+
+/* These styling are for anchor tag in navBar */
+.nav-logo a{
+    font-size: 35px;
+    text-decoration: none;
+    margin-left:25px;
+    color:white;
+    letter-spacing:1px;
+    font-weight: 600;
+    text-shadow: -1px 1px 0 #41ba45,
+	1px 1px 0 #c63d2b,
+	1px -1px 0 #42afac,
+	-1px -1px 0 #c6c23f,
+}
+.nav-logo img{
+    height:65px;
+    width:80px;
+    margin-left:30px;
+    
+    margin-top:-30px;
+    
+}
+/* for the name of users */
+.nameOfUser{
+    font-size: 20px;
+    margin-left:2px;
+    margin-right:8px;
+    margin-top:8px;
+    color:white;
+    font-weight:bold;
+
+}
+.nameOfUser img{
+    height:30px;
+    width:30px;
+  padding:5px;
+  margin-right:8px;
+   
+}
+
+/* Thesse styling are for logOut, button which is present on the navBar */
+.logOut a{
+    font-size: 30px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.noUser ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.noUser li{
+    list-style: none;
+    font-size: 19px;
+    padding-left: 15px;
+    margin-top:10px;
+    margin-right:20px;
+}
+
+.noUser li a{
+    text-decoration: none;
+    color: white;
+}
+.noUser li a button{
+    background-color: white;
+    color: var(--black);
+    transition: transform .2s;
+    width: 6rem;
+    font-weight: 600;
+}
+
+.noUser li a button:hover{
+    background-color: white;
+    color: black;
+    transform: translateY(-5px);
+}
+
+.logOut{
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:5px;
+    margin-right: 20px;
+    width: 220px;
+}
+
+.logOut span{
+    cursor: pointer;
+}
+
+.logOut a{
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+}
+
+.logOut a button{
+    font-size: medium;
+    padding: 6px;
+    width: 90px;
+    border-radius: .5rem;
+    font-weight: 600;
+    transition: transform .5s;
+}
+
+.logOut a button:hover{
+    transform: translateY(-5px);
+    box-shadow: var(--box-shadow);
+}
+
+/* admin view designing */
+
+.admin-view{
+    margin-right: 30px;
+}
+
+.admin-view a{
+    margin-right: 30px;
+    text-decoration: none;
+    font-size: 15px;
+    color: var(--black);
+    font-weight: 600;
+    background-color: white;
+    padding: 8px;
+    border-radius: .3rem;
+}
+
+.admin-view a:hover{
+    text-decoration: underline;
+}
